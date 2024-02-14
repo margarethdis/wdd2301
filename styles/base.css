@@ -32,6 +32,7 @@ header img{
     height: auto;
     border-radius: 50%;
     margin-top: 20px;
+    margin-right: 20px;
     margin-bottom: 10px;
        
 }
@@ -82,7 +83,12 @@ main{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;/*es espacio interno de mi contenido*/
+    display: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
 
 h2{
     color: #333; /*Color del texto del encabezdo h2*/
@@ -93,12 +99,15 @@ h2{
 
 /*card 1 seccion de activities*/
 .card{
+    width: 300px;
+    margin: 20px;
     background-color: #f0f0f0; 
     border:  1px solid#ccc;
     border-radius: 8px; /*Bordes redondeados de las tajetas*/
     border-bottom: 1px solid #ccc;/*esta es para el margen inferior de las tarjetas*/
     padding: 15px;/*el espacio interno para la tarjeta*/
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .card ul{
@@ -177,7 +186,6 @@ body {
 }
 
 #container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -189,6 +197,13 @@ header {
     display: flex;
     justify-content: center;
 }
+
+header, nav{
+    margin: 0;
+    padding: 0;
+}
+
+
 
 header img {
     max-width: 150px;
@@ -215,7 +230,13 @@ nav {
 }
 
 nav ul {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 10px;
 }
 
 nav a {

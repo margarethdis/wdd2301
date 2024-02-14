@@ -30,8 +30,8 @@ main .card{
 /*Para mostrar las secciones principales en dos columnas en las vistas más grandes*/
 @media screen and (min-width: 768px) {
     main .card {
-        width: 48%; /* ajustar este valor según el diseño */
-        margin-right: 2%; /*ajustar este valor para agregar un pequeño espacio entre las columnas */
+        width: 100%; /* ajustar este valor según el diseño */
+        margin-left:0px; /*ajustar este valor para agregar un pequeño espacio entre las columnas */
     }
 }
 
