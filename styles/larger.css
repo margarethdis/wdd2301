@@ -24,7 +24,7 @@ Para mostrar las secciones principales en una sola
 columna en la vista móvil*/
 
 main .card{
-    width: 100%;
+    width: 80%;
 }
 
 /*Para mostrar las secciones principales en dos columnas en las vistas más grandes*/
