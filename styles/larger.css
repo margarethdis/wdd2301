@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    /* Aquí van las reglas CSS para pantallas más grandes */
+    body{
+        font-size: 18px;
+    }
+}
+
+/*Para mostrar los enlaces verticalmente en una sola columna en la vista móvil*/
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Para mostrar los enlaces horizontalmente en una fila en las vistas más grandes
+*/
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/*Mostrar las secciones principales en columnas
+Para mostrar las secciones principales en una sola 
+columna en la vista móvil*/
+
+main .card{
+    width: 100%;
+}
+
+/*Para mostrar las secciones principales en dos columnas en las vistas más grandes*/
+@media screen and (min-width: 768px) {
+    main .card {
+        width: 48%; /* ajustar este valor según el diseño */
+        margin-right: 2%; /*ajustar este valor para agregar un pequeño espacio entre las columnas */
+    }
+}
+
+
+
