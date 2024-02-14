@@ -88,6 +88,15 @@ main{
     justify-content: center;
 }
 
+/*Larger views*/
+@media (min-widht:640px){
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        flex: 1 1 100%;
+    }
+}
 
 
 h2{

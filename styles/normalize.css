@@ -196,7 +196,7 @@ button,
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    appearance: button;
+    -webkit-appearance: button;
   }
   
   /**
@@ -268,7 +268,7 @@ textarea {
    */
   
 [type="checkbox"],
-[type="radio"] {
+  [type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
   }
@@ -288,7 +288,7 @@ textarea {
    */
   
 [type="search"] {
-    appearance: textfield; /* 1 */
+    -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
   }
   
@@ -344,7 +344,7 @@ template {
    * Add the correct display in IE 10.
    */
   
-[hidden] {
+  [hidden] {
     display: none;
   }
   
