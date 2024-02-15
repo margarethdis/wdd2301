@@ -69,7 +69,6 @@ footer{
 section{
   margin-top: 50px;
   margin-bottom: 35px;
-  display: flex;
   width: 100%;
   justify-content: space-between;
 }
