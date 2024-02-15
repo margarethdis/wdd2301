@@ -94,13 +94,33 @@ section p{
   margin-bottom: 0;
 }
 
-/* Estilos generales */
-
-/* Aquí van tus 
-
-
-
+@media screen and (min-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
+
+@media screen and (min-width: 1024px ) {
+  .card{
+    width:100%
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
 
 
 
