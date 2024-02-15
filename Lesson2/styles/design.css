@@ -13,9 +13,9 @@ header,main,footer{
 }
 
 header{
-
+  
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
   background-color: #037971;
   color: #f9f9f9;
   padding: 20px 0;
@@ -50,7 +50,7 @@ footer{
 .card{
   background-color:#f9f9f9 ;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -67,7 +67,17 @@ footer{
 
 /*aqui estilo epecificos para diferentes secciones*/
 section{
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+section p{
+  font-size:medium;
+  font-style: italic;
+  text-align: center;
 }
 
 .card h2{
@@ -75,10 +85,55 @@ section{
   color: #ffff;
   border-radius: 8px 8px 0 0;
   padding: 20px;
-  margin-top: 0;
+  margin-top: 0px;
+  text-align: center;
 
 }
 
 .card p{
   margin-bottom: 0;
 }
+
+/* Estilos generales */
+
+/* Aquí van tus estilos generales */
+
+/* Media query para medium view */
+@media screen and (min-width: 768px) {
+  /* Las primeras 2 tarjetas aparecen en 2 columnas */
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  
+/* Aquí van tus otros estilos para el contenido */
+
+/* Media query para medium view */
+@media screen and (min-width: 768px) {
+  /* Estilos para medium view */
+}
+
+/* Media query para larger views */
+@media screen and (min-width: 1024px) {
+  /* Las 3 tarjetas aparecen en una fila */
+  section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Para distribuir las tarjetas horizontalmente */
+  }
+  
+  /* Ajustar el ancho de las tarjetas para que ocupen el espacio disponible */
+  .card {
+    flex: 0 0 calc(33.33% - 20px); /* Calculamos el ancho de cada tarjeta, descontando el espacio entre ellas */
+  }
+}
+
+
+
+}
+
+
+
+
