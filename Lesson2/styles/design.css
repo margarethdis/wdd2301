@@ -96,39 +96,7 @@ section p{
 
 /* Estilos generales */
 
-/* Aquí van tus estilos generales */
-
-/* Media query para medium view */
-@media screen and (min-width: 768px) {
-  /* Las primeras 2 tarjetas aparecen en 2 columnas */
-  section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px; /* Espacio entre las tarjetas */
-  }
-  
-  
-/* Aquí van tus otros estilos para el contenido */
-
-/* Media query para medium view */
-@media screen and (min-width: 768px) {
-  /* Estilos para medium view */
-}
-
-/* Media query para larger views */
-@media screen and (min-width: 1024px) {
-  /* Las 3 tarjetas aparecen en una fila */
-  section {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; /* Para distribuir las tarjetas horizontalmente */
-  }
-  
-  /* Ajustar el ancho de las tarjetas para que ocupen el espacio disponible */
-  .card {
-    flex: 0 0 calc(33.33% - 20px); /* Calculamos el ancho de cada tarjeta, descontando el espacio entre ellas */
-  }
-}
+/* Aquí van tus 
 
 
 
