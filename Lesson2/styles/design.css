@@ -1,0 +1,84 @@
+/*Estilos generales*/
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,main,footer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+header{
+
+  text-align: center;
+  margin-top: 20px;
+  background-color: #037971;
+  color: #f9f9f9;
+  padding: 20px 0;
+}
+
+
+header h1 {
+  font-family: 'Montserrat', sans-serif; /* Usando la fuente Montserrat */
+  text-decoration: underline; /* Subrayado */
+  }
+
+header h2,
+p {
+  font-size: 1.50em;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+header p:nth-last-of-type(2){
+  font-weight: bold;
+}
+  
+footer{
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #023436;
+  color: #f9f9f9;
+  padding: 20px 0;
+
+}
+
+.card{
+  background-color:#f9f9f9 ;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card img{
+  width: 100%; /*con esto la imagen ocupa todo el ancho de la tageta*/
+  border-radius: 8px;
+  margin-bottom: 10px;/*Espacio entre la imagen y el text*/
+}
+
+.card h3{
+  margin-top: 0;
+}
+
+/*aqui estilo epecificos para diferentes secciones*/
+section{
+  margin-bottom: 40px;
+}
+
+.card h2{
+  background-color: #037971;
+  color: #ffff;
+  border-radius: 8px 8px 0 0;
+  padding: 20px;
+  margin-top: 0;
+
+}
+
+.card p{
+  margin-bottom: 0;
+}
