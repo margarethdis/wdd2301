@@ -12,17 +12,18 @@ body {
 
 #container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+   
 }
 
 header {
-    margin-top: 0px;
+
+    margin-top: 0;
     padding: 50px;
     background-color: #333;
     text-align: center;
     display: flex;
     justify-content: center;
+    background-position: center;
 }
 
 header img {
@@ -45,6 +46,8 @@ nav{
     justify-content: center;
 
 }
+
+
 
 
 nav a {
@@ -87,6 +90,14 @@ h2 {
     padding: 15px;
     margin-bottom: 20px;
     justify-content: center;
+    margin-left: 60px;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card ul {
@@ -126,8 +137,7 @@ li a {
     color: white;
     text-align: center;
 }
-
-/* Agrega nuevas reglas CSS para el menú hamburguesa */
+/*hamburger bttom*/
 .menu-icon {
     display: none;
     color: #ccc;
@@ -176,6 +186,23 @@ li a {
     text-decoration: none;
 }
 
+footer{
+    background-color: #1a5276 ;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 30px;
+    vertical-align: middle; /*esto alinea mi bandera con el texto verticalmente*/
+    margin-left: 5px; /* un espacio a la izquierda del icono*/
+}
+
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
 
@@ -192,7 +219,7 @@ li a {
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 365px;
+        top: 345px;
         left: 0;
         width: 100%;
     }
@@ -217,7 +244,8 @@ li a {
         display: inline-block;
         cursor: pointer;
     }
-    /*estilos para cerrar menu*/
+
+    
 
     
     
@@ -225,7 +253,7 @@ li a {
 
 
 
-/*menu cope pen refrerence*/
+
 #menu{
     font-size: 1.5rem;
     border: 0;
