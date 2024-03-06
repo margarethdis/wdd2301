@@ -11,12 +11,13 @@ body {
 }
 
 #container {
-    max-width: 1200px;
+    width: 100%;
    
 }
 
 header {
-
+    width: 100%;
+    height: 50vh;
     margin-top: 0;
     padding: 50px;
     background-color: #333;
@@ -24,10 +25,11 @@ header {
     display: flex;
     justify-content: center;
     background-position: center;
+    background-size: cover;
 }
 
 header img {
-    max-width: 150px;
+    max-width:80vw;
     height: auto;
     border-radius: 50%;
     margin-top: 20px;
@@ -36,10 +38,10 @@ header img {
 }
 
 h1 {
-    margin-left: 30px;
-    padding-top: 75px;
+    margin-left: 10px;
+    padding-top: 20px;
     color: #fff;
-    font-size: 3em;
+    font-size: 3.5vw;
 }
 
 nav{
@@ -72,6 +74,28 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    justify-content: space-between;
+}
+
+.activities,
+.information{
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+}
+
+.map{
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+@media  screen and (max-width: 1200px) {
+    .activities,
+    .information,
+    .map{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    
 }
 
 h2 {
@@ -149,12 +173,24 @@ li a {
 }
 
 .nav {
-    display: none;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     list-style: none;
-    background-color: #333;
+    background-color: #1a5376;
+    top: 50px;
     color: #fff;
-    
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+}
+
+.nav a{
+    margin-left: 100px;
+}
+
+.nav li {
+    margin: 0 10px;
 }
 
 .nav-list{
@@ -186,15 +222,19 @@ li a {
     text-decoration: none;
 }
 
+
+
 footer{
     background-color: #1a5276 ;
     color: #fff;
     padding: 20px;
     text-align: center;
+    
 }
 
 footer p {
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 
 footer img {
@@ -202,6 +242,16 @@ footer img {
     vertical-align: middle; /*esto alinea mi bandera con el texto verticalmente*/
     margin-left: 5px; /* un espacio a la izquierda del icono*/
 }
+
+@media screen and (min-width: 769px) {
+    .nav li {
+        margin-right: 20px;
+         /* Ajustamos el espacio entre los botones en pantallas más grandes */
+    }
+
+    
+}
+
 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
@@ -219,9 +269,10 @@ footer img {
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 345px;
+        top: 200px;
         left: 0;
         width: 100%;
+        
     }
 
     .nav.show li{
@@ -245,13 +296,31 @@ footer img {
         cursor: pointer;
     }
 
+    .card{
+        margin-top: 50px;
+    }
+
+    h2{
+        margin-top: 50px;
+    }
+
+    .map{
+        max-width: 600px;
+    }
+
+
+
     
 
     
     
 }
 
-
+.map{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 #menu{

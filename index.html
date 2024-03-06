@@ -68,9 +68,9 @@
             <h3>Information</h3>
             <p>Weather: [weather] </p>
             <p>Visits: [visits] </p>
-
         </section>
 
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491365.80618126!2d-86.9810546!3d15.8147408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69007758cbbcd9%3A0xc8141bec642348c0!2sLa%20Ceiba%2C%20Atl%C3%A1ntida!5e0!3m2!1sen!2shn!4v1709695634092!5m2!1sen!2shn" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
     <footer>
@@ -83,9 +83,19 @@
 
 
 
-    </script>
+  
 
     <script src="scripts/menu.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // aqui esto Obtiene el elemento del span de la fecha de la última modificación
+            var lastModifiedSpan = document.getElementById('last-modified-date');
+
+            // y aqui Obtiene la fecha de la última modificación del documento y la asigna al span
+            lastModifiedSpan.textContent = document.lastModified;
+        });
+    </script>
 
 </body>
 </html>
