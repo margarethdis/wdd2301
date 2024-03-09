@@ -5,7 +5,7 @@
 }
 
 header {
-    background: #15323f;
+    background: #042444;
     width: 100%;
     height: 100px;
     display: flex;
@@ -32,11 +32,11 @@ section {
 }
 
 section h3 {
-    background-color: #0e4860;
+    background-color: #E29F41;
     color: #ffff;
     padding: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
 }
 
@@ -96,21 +96,24 @@ section:nth-child(1){
     height:auto;
 }
 
-.white{
-    background-color: #ffff;
+.oxford{
+    background-color: #042444;
+    color:#ffff;
 }
 
-.cyan{
-    background-color: #138f87;
+
+.butter{
+    background-color: #E29F41;
+    
 }
 
-.gunmetal{
-    background-color: #15323f;
-    color:white;
+.magenta{
+    background-color: #8C274B;
+    color: #ffff;
 }
 
-.black{
-    background-color: #1b1b1e;
+.blue{
+    background-color: #032140;
     color: white;
 }
 
