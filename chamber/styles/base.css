@@ -250,45 +250,49 @@ main{
 
 
 
+/* footer */
 footer{
     width: 100%;
-    height: 400px;
+    height: auto; /* Ajustado a auto para ajustarse al contenido */
     background-color: #032140;
     color: aliceblue;
-    justify-content: center;
-    
-    
+    display: flex; /* Usar flexbox */
+    justify-content: center; 
+    align-items: center;/* Alinear elementos horizontalmente al centro */
+    padding: 20px 0; 
+    flex-direction: column;/* Añadir un poco de espacio interno arriba y abajo */
 }
 
 .footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%; /* Ajustar el ancho al 100% */
+    max-width: 1200px; /* Por ejemplo, un ancho máximo para centrar el contenido */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Alinear elementos del footer */
+    align-items: center; /* Alinear verticalmente */
+    margin-bottom: 20px;
 }
 
-.contact-information, iframe
-
-.contact-information {
-    display: flex;
-    margin-left: 20px;
-    padding: 50px;
-    justify-content: center; 
-    align-items:center;/* Ajusta este valor según la cantidad de espacio que desees entre el borde izquierdo y el contenido de contacto */
+.contact-information, .map { /* Seleccionar ambos elementos para aplicar estilos */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinear verticalmente */
+    margin-left: 300px;
 }
 
+
+
+.map{
+    width: 50%;
+    width: 500px;
+    height: 190px;
+    margin-left: 70px;
+}
 
 
 .copyright{
     margin-top: 400px;
     text-align: center;
     color: brown;
+    padding-bottom: 0px;
+    margin-right: 500px;
 }
-
-.map{
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
 
