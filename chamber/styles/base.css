@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    background-color: #042444;
+}
+
+
+header img{
+    width: 100px;
+    margin-left: 20px;
+}
+   
+
+.menu{
+    width: 100%;
+    background-color: #E29F41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E29F41;
+    color: rgba(20, 63, 101, 0.931);
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.menu a:hover{
+    background-color: #042444;
+    color: aliceblue;
+
+}
+
+.menu a:focus{
+    outline:none;
+}
+
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+.menu li{
+    margin: 20px;
+    color: rgb(255, 233, 233);
+
+
+}
+
+
+
+.social-links{
+    display: flex;
+    width: auto;
+    justify-content:flex-end ;
+   
+
+}
+.social-links a{
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+.social-links a i{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+/*main*/
+/*hero section */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: calc(40vh-50px); /*300 es el alto de mi barra nav*/
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition:all .1s ease-in-out;
+    background-image: url("../images/crece.jpg");
+    animation: hero-container 28s infinite linear;
+
+}
+
+.hero-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    color: aliceblue;
+    background-color: rgba(0,22, 40 , .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+
+
+
+}
+
+.hero-content a {
+    margin-top: 40px;
+    text-decoration: none;
+    color:aliceblue;
+    padding: 9px 20px;
+    border: 1px solid#ffff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+
+
+}
+
+.hero-content a:hover{
+    color: #333;
+    background-color: #ffff;
+}
+
+@keyframes hero-container{
+
+    0%{
+        background-image: url("../images/crece.jpg");
+    }
+    25%{
+        background-image: url("../images/crece.jpg");
+    }
+
+    
+    26%{
+        background-image: url("../images/entrega.jpg");
+    }
+    50%{
+        background-image: url("../images/entrega.jpg");
+    }
+
+
+    
+    51%{
+        background-image: url("../images/compania.jpg");
+    }
+    75%{
+        background-image: url("../images/compania.jpg");
+    }
+
+    
+    76%{
+        background-image: url("../images/ogimage.jpg");
+    }
+    100%{
+        background-image: url("../images/ogimage.jpg");
+    }
+
+}
+
+.event-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+
+}
+
+.weather-card{
+    background-color:#f9f9f9 ;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin:  0 auto;
+    margin-bottom: 100px;
+
+
+}
+
+
+
+
+.spotlight-card{
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+
+
+
+
+
+
+
+
+/*sections*/
+.sections{
+    margin-top: 100px;
+}
+
+.fa-solid{
+    margin-bottom: 30px;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #032140;
+    color: aliceblue;
+    justify-content: center;
+    
+    
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-information, iframe
+
+.contact-information {
+    display: flex;
+    margin-left: 20px;
+    padding: 50px;
+    justify-content: center; 
+    align-items:center;/* Ajusta este valor según la cantidad de espacio que desees entre el borde izquierdo y el contenido de contacto */
+}
+
+
+
+.copyright{
+    margin-top: 400px;
+    text-align: center;
+    color: brown;
+}
+
+.map{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
