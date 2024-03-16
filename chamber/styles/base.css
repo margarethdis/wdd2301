@@ -21,7 +21,9 @@ header img{
     background-color: #E29F41;
     display: flex;
     align-items: center;
+    text-decoration: none;
     justify-content: center;
+    
    
 }
 
@@ -32,6 +34,7 @@ header img{
     color: rgba(20, 63, 101, 0.931);
     border-radius: 5px;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 .menu a:hover{
@@ -80,6 +83,9 @@ header img{
 
 /*main*/
 /*hero section */
+
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -237,11 +243,8 @@ main{
 .fa-solid{
     margin-bottom: 30px;
     font-size: 80px;
+
 }
-
-
-
-
 
 
 
@@ -252,47 +255,82 @@ main{
 
 /* footer */
 footer{
-    width: 100%;
-    height: auto; /* Ajustado a auto para ajustarse al contenido */
-    background-color: #032140;
-    color: aliceblue;
-    display: flex; /* Usar flexbox */
-    justify-content: center; 
-    align-items: center;/* Alinear elementos horizontalmente al centro */
-    padding: 20px 0; 
-    flex-direction: column;/* Añadir un poco de espacio interno arriba y abajo */
+    background-color: #042444;
+    color: #ffff;
 }
 
-.footer-content{
-    width: 100%; /* Ajustar el ancho al 100% */
-    max-width: 1200px; /* Por ejemplo, un ancho máximo para centrar el contenido */
-    display: flex; /* Usar flexbox */
-    justify-content: space-between; /* Alinear elementos del footer */
-    align-items: center; /* Alinear verticalmente */
-    margin-bottom: 20px;
+.map
+{
+    width: 50px;
+    height: 50px;
+    
 }
 
-.contact-information, .map { /* Seleccionar ambos elementos para aplicar estilos */
-    display: flex; /* Usar flexbox */
-    align-items: center; /* Alinear verticalmente */
-    margin-left: 300px;
-}
-
-
-
-.map{
-    width: 50%;
-    width: 500px;
-    height: 190px;
-    margin-left: 70px;
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 .copyright{
-    margin-top: 400px;
-    text-align: center;
-    color: brown;
-    padding-bottom: 0px;
-    margin-right: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
 }
+
+
+
+/*
+/*menu hamburguesa para movil*/
+#menu-hamburguer{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    text-decoration: none;
+    top: 1 rem;
+    right:1rem;
+}
+
+
+/*
+#menu-hamburguer::before{
+    content: "☰";
+}
+
+#menu-hamburguer.open::before{
+    content: "❎";
+}
+
+.menu a{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu a:hover{
+    background-color: #042444;
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu a {
+    display: block;
+    margin-top: 15px;
+}
+
+.menu.open a {
+    display: block;
+}*/
+
+
+
+
+
 
