@@ -55,6 +55,10 @@ nav li{
     .menu-icon{display:none;}
     .nav{display: absolute;  /*antes no se mostraba habia que agregar el flex */}}
 @media screen and (max-width:768px){
+    .header{
+        height: auto;
+        justify-content: flex-start;
+    }
 
     .social-links{
         margin-top: 100px;
