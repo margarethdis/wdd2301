@@ -453,20 +453,19 @@ input[type="submit"]:hover {
 }
 
 form button[type="submit"] {
-    background-color: #042444; /* Color de fondo similar al del footer */
-    color: #ffffff; /* Color del texto */
-    padding: 15px 30px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 10px; /* Bordes redondeados */
-    font-size: 18px; /* Tamaño del texto */
-    cursor: pointer; /* Cambio de cursor al pasar el ratón */
-    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
-    margin-top: 20px; /* Margen superior */
+    background-color: #042444; 
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 18px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-top: 20px;
 }
 
 form button[type="submit"]:hover {
-    background-color: #024b78; /* Color del fondo más oscuro al pasar el ratón */
-}
+    background-color: #024b78; }
 
 /*benefits*/
 .benefits-container {
