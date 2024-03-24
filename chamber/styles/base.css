@@ -53,7 +53,35 @@ nav li{
     text-decoration: none;}
 @media screen and (min-width: 769px) {
     .menu-icon{display:none;}
-    .nav{display: absolute;  /*antes no se mostraba habia que agregar el flex */}}
+    .nav{display: absolute;  /*antes no se mostraba habia que agregar el flex */}
+    .dark-mode input[type="text"],
+    .dark-mode input[type="email"],
+    .dark-mode input[type="tel"],
+    .dark-mode select,
+    .dark-mode textarea {
+        background-color: #333; /* Color de fondo oscuro */
+        color: #ccc; /* Color de texto claro */
+        border: 1px solid #666; /* Borde más claro */
+        font-size: 18px; /* Tamaño de fuente más grande */
+    }
+
+    .dark-mode option {
+        background-color: #333; /* Color de fondo oscuro para las opciones del select */
+        color: #fff; /* Color de texto claro para las opciones del select */
+    }
+
+    .dark-mode ::placeholder {
+        color: #ccc; /* Color de texto gris claro para texto de marcador de posición */
+    }
+
+    .dark-mode label{
+        color: #333;
+    }
+}
+
+
+
+
 @media screen and (max-width:768px){
     .header{
         height: auto;
@@ -101,7 +129,35 @@ nav li{
         padding: 15px 20px;}
         .close-menu{
         display: inline-block;
-        cursor:pointer;}}
+        cursor:pointer;}
+
+    /*join us form*/
+
+    .dark-mode input[type="text"],
+    .dark-mode input[type="email"],
+    .dark-mode input[type="tel"],
+    .dark-mode select,
+    .dark-mode textarea {
+        background-color: #333; /* Color de fondo oscuro */
+        color: #fff; /* Color de texto claro */
+        border: 1px solid #666; /* Borde más claro */
+        font-size: 16px; /* Tamaño de fuente más grande */
+    }
+
+    .dark-mode option {
+        background-color: #333; /* Color de fondo oscuro para las opciones del select */
+        color: #fff; /* Color de texto claro para las opciones del select */
+    }
+
+    .dark-mode ::placeholder {
+        color: #ccc; /* Color de texto gris claro para texto de marcador de posición */
+    }
+
+    .dark-mode label{
+        color: #333;
+    }
+    
+    }
 #menu{
     font-size: 1.5rem;
     border: 0;
@@ -389,10 +445,26 @@ input[type="submit"]:hover {
 }
 
 #applicant-title {
-    pattern: "[A-Za-z\s-]{7,}"; 
+    kerning: "[A-Za-z\s-]{7,}"; 
 }
 
 #membership-level {
     width: 100%;
+}
+
+form button[type="submit"] {
+    background-color: #042444; /* Color de fondo similar al del footer */
+    color: #ffffff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño del texto */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+    margin-top: 20px; /* Margen superior */
+}
+
+form button[type="submit"]:hover {
+    background-color: #024b78; /* Color del fondo más oscuro al pasar el ratón */
 }
 
