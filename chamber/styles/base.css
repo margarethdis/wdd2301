@@ -468,3 +468,45 @@ form button[type="submit"]:hover {
     background-color: #024b78; /* Color del fondo más oscuro al pasar el ratón */
 }
 
+/*benefits*/
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.membership-benefit {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: px;
+}
+
+.membership-benefit h2 {
+    margin-bottom: 10px;
+}
+
+.membership-benefit ul {
+    padding: 0;
+    margin: 0;
+}
+
+.membership-benefit li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.membership-level {
+    margin-bottom: 20px;
+}
+
+.membership-level .stars {
+    color: gold;
+}
+
+.dark-mode .membership-benefits {
+    color: #000; /* Establece el color del texto a negro */
+}
