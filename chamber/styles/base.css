@@ -265,7 +265,7 @@ footer{
 .dark-mode .current-events .event-card span,
 .dark-mode .weather .weather-card h2,
 .dark-mode .weather .weather-card p{
-    color: #fff;
+    color: #ccc;
 }
 
     .dark-mode-switch {
