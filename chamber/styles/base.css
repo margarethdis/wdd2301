@@ -326,5 +326,49 @@ footer{
     input[type="checkbox"]:checked + .toggle:after {
         background-color: white;
     }
+
+/*join us*/
+.join-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.join-form textarea {
+    height: 100px;
+}
+
+.join-form button {
+    background-color: #042444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-form button:hover {
+    background-color: #033266;
+}
+
     
 

@@ -34,67 +34,22 @@
         </ul>
     </nav> 
 </div>
-    <main>
-        <div class="hero-container">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome!</h1>
-                <p>Discover opportunities for your business within our chamber of commerce promoting tourism and the economy of our city of La Ceiba. </p>
-                <a href="join.html" class="join-button" > Join us now!</a>
+<main>
+    <form action="thankyou.html" method="get" class="join-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            </div> 
-        </div>
-        </section>
-        </div>
-        <div class="sections">
-        <section class="current-events">
-            <div class="event-card">
-            <i class="fa-solid fa-calendar-days"></i>
-            <h2>Current events</h2>
-            <div class="event">
-                <h3>Event 1</h3>
-                <p>description event 1</p>
-                <span>Date: March 12, 2024</span>
-            </div>
-            <div class="event">
-                <h3>Event 2</h3>
-                <p>description event 2</p>
-                <span>Date: Abril 10, 2024</span>
-            </div>
-            <!--agregar mas eventos si es necesario-->
-            </div>
-        </section>
-        <section class="weather">
-            <!--TARGETA METEOROLOGICA-->
-            <div class="weather-card">
-            <i class="fa-solid fa-cloud-sun"></i>
-            <h2>Current weather</h2>
-            <div class="weather">
-                <h3> City: Name of City</h3>
-                <p>Temperature: 20°C </p>
-                <p>Descriptioon: Clear</p>
-            </div>
-            </div>
-        </section> 
-        <section class="splotlights">
-            <!--UNO A TRES ANUNCIOS DESTACADOS DE LA PAGINA-->
-            <div class="spotlight-card">
-            <i class="fa-solid fa-ranking-star"></i>
-            <h2>Featured Companies</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>description company 1</p>
-                <a href="#">More information...</a>
-            </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>Description company 2</p>
-                <a href="#">more information...</a>
-            </div><!--agregar las que requiera-->
-            </div>
-        </section> 
-        </div>
-    </main>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+
     <footer>
         <p> Margareth Daniela Ramos Discua</p>
         <p id="last-modified"> Last modification: <span id="last-modified-date"></span></p>
