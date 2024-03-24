@@ -55,6 +55,16 @@ nav li{
     .menu-icon{display:none;}
     .nav{display: absolute;  /*antes no se mostraba habia que agregar el flex */}}
 @media screen and (max-width:768px){
+
+    .social-links{
+        margin-top: 100px;
+        margin-left:640px;
+    }
+    .dark-mode-switch{
+        margin-top: 0px;
+        left:500px;
+        position: absolute;
+    }
     .nav{display: none;
          position: flex;
          top:100px;
@@ -85,7 +95,7 @@ nav li{
         text-decoration: none;
         font-size: 1.2rem;
         padding: 15px 20px;}
-    .close-menu{
+        .close-menu{
         display: inline-block;
         cursor:pointer;}}
 #menu{
@@ -98,6 +108,7 @@ nav li{
     right: 2rem;
     display: column;
     z-index: 1000;}
+
 #menu::before{
     content: "☰";}
 #menu.open::before{
@@ -114,7 +125,9 @@ nav li{
     color: rgb(255, 233, 233);}
 .social-links{
     display: flex;
+    align-items: center;
     width: auto;
+    margin-right: 100px;
     justify-content:flex-end ;}
 .social-links a{
     margin-right: 20px;
@@ -201,7 +214,12 @@ main{
     border-radius: 5px;
     padding: 20px;
     max-width: 400px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 100px;}
 .sections{margin-top: 100px;}
 
@@ -226,4 +244,83 @@ footer{
     padding-bottom: 50px;}
 
 
+.dark-mode {
+    background-color: #111;
+    color: #fff; 
+}
+
+.dark-mode .spotlight-card,
+.dark-mode .current-events .event-card,
+.dark-mode  .weather .weather-card{
+    background-color: #333;
+    border-color: #666;
+}
+
+
+.dark-mode .spotlight-card h2,
+.dark-mode .spotlight-card p,
+.dark-mode .spotlight-card a,
+.dark-mode .current-events .event-card h2,
+.dark-mode .current-events .event-card p,
+.dark-mode .current-events .event-card span,
+.dark-mode .weather .weather-card h2,
+.dark-mode .weather .weather-card p{
+    color: #fff;
+}
+
+    .dark-mode-switch {
+        position:absolute;
+        top: 35px;
+        margin-right: 30px;
+        right: 40px;
+        z-index: 1000;
+    }
+    
+    .dark-mode-switch input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    .toggle {
+        cursor: pointer;
+        height: 30px;
+        width: 60px;
+        background-color: grey;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    .toggle:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        top: 0;
+        left: 0;
+        transition: 0.4s;
+    }
+    
+    .toggle:after {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: black;
+        top: 2px;
+        left: 2px;
+        transition: 0.4s;
+    }
+    
+    input[type="checkbox"]:checked + .toggle:before {
+        left: 30px;
+    }
+    
+    input[type="checkbox"]:checked + .toggle:after {
+        background-color: white;
+    }
+    
 
