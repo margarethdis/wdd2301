@@ -16,18 +16,26 @@ header img{
 }
    
 
-.menu{
+.nav{
     width: 100%;
     background-color: #E29F41;
     display: flex;
     align-items: center;
     text-decoration: none;
     justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    top: 50px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+
     
    
 }
 
-.menu a{
+.nav a{
     display: inline-block;
     padding: 10px 20px;
     background-color: #E29F41;
@@ -35,31 +43,173 @@ header img{
     border-radius: 5px;
     margin: 0 10px;
     text-decoration: none;
+    margin-left: 100px;
 }
 
-.menu a:hover{
+nav li{
+    margin: 0 10px;
+}
+
+.nav-list{
+    display: none;
+}
+
+.nav.show{
+    display: flex;
+    flex-direction: column;
+    background-color: #042444;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+
+}
+
+.nav.show li{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+
+}
+
+.nav.show li:last-child {
+    border-bottom: none;
+}
+
+.nav.show a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .menu-icon{
+        display:none;
+    }
+
+    .nav{
+        display: absolute;  /*antes no se mostraba habia que agregar el flex */
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+
+    
+    .nav{
+        display: none;
+        position: flex;
+        top:100px;
+        left:0;
+        width:100%;
+        z-index: 1000;
+        overflow-y: auto;
+        max-height: calc(100vh - 100px);
+        overflow-x: hidden;
+        margin-top: -20px;
+        
+    }
+
+    .nav a {
+        margin-left: 40px;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+
+
+    .nav.show{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        display: block;
+       
+
+    }
+
+    .nav.show li{
+        padding: 10px 0;
+        text-align:center;
+        border-bottom: 1px solid #ffff;
+    }
+
+    .nav.show li:last-child{
+        border-bottom:none
+    }
+
+    .nav.show a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .close-menu{
+        display: inline-block;
+        cursor:pointer;
+    }
+     
+}
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: column;
+    z-index: 1000;
+    
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "✖";
+}
+
+
+
+
+
+
+
+
+
+.nav a:hover{
     background-color: #042444;
     color: aliceblue;
 
 }
 
-.menu a:focus{
-    outline:none;
-}
 
 
-.menu ul{
+.nav ul{
     list-style-type: none;
-    display: flex;
+    display: absolute;
 }
 
 
-.menu li{
-    margin: 20px;
+.nav li{
+    margin: 1px;
+    display: list-item;
+    justify-items: center;
     color: rgb(255, 233, 233);
 
 
 }
+
+
+
+
+
+
 
 
 
@@ -83,8 +233,6 @@ header img{
 
 /*main*/
 /*hero section */
-
-
 
 main{
     display: flex;
@@ -257,6 +405,8 @@ main{
 footer{
     background-color: #042444;
     color: #ffff;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .map
@@ -280,57 +430,6 @@ footer{
     display: flex;
     padding-bottom: 50px;
 }
-
-
-
-/*
-/*menu hamburguesa para movil*/
-#menu-hamburguer{
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-    position: absolute;
-    text-decoration: none;
-    top: 1 rem;
-    right:1rem;
-}
-
-
-/*
-#menu-hamburguer::before{
-    content: "☰";
-}
-
-#menu-hamburguer.open::before{
-    content: "❎";
-}
-
-.menu a{
-    display: none;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #ffff;
-}
-
-.menu a:hover{
-    background-color: #042444;
-    color: #fff;
-    font-weight: 700;
-}
-
-.menu a {
-    display: block;
-    margin-top: 15px;
-}
-
-.menu.open a {
-    display: block;
-}*/
-
-
-
 
 
 

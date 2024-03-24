@@ -1,8 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuButton = document.getElementById('menu-hamburguer');
-    const menu = document.querySelector('.menu');
 
-    menuButton.addEventListener('click', function() {
-        menu.classList.toggle('open');
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#menu').addEventListener('click', function() {
+        document.querySelector('.nav').classList.toggle('show');
+        document.querySelector('#menu').classList.toggle('open');
+    });
+
+    // Cerrar el menú al hacer clic en el botón "X"
+    document.querySelector('.close-menu').addEventListener('click', function() {
+        document.querySelector('.nav').classList.remove('show');
+        document.querySelector('#menu').classList.remove('open');
     });
 });
