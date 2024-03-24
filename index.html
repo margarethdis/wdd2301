@@ -6,35 +6,23 @@
     <title>Margareth Ramos - WDD230 - Web Frontent Development </title>
     <meta name="description" content="This page contains the project called WDD 230 -Web interface development and everything that will be the activities of the wdd230 course, during the course of the semester it will be updated according to what is indicated.">
     <meta name="author" content="Margareth Daniela Ramos Discua">
-
     <meta property="og:title" content="Student portal for activities">
     <meta property="og:type"  content="website">
     <meta property="og:image" content="https://github.com/margarethdis/wdd230/blob/main/images/la-ceiba-ciudad.jpg?raw=true">
     <meta property="og:url" content="https://margarethdis.github.io/wdd230/">
-
-
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/portal-estudiante.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/menu.css">
-    
-    
-
-   
-   
-
 </head>
 
 <body>
-
     <div id="container">
         <header>
             <img src="images/foto-perfil.png" alt="Imagen de perfil">
             <h1>Margareth Ramos</h1>
-
         </header>
-
     <button id="menu" class="menu-icon"></button>  
     <nav class = "nav">
         <ul>
@@ -46,14 +34,9 @@
         </ul>
         <button class="close-menu">&times;</button>
         </nav>
-
-        
-    
     </div>
-
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -65,16 +48,13 @@
                 <li><a href="">Activity WEEK 6: </a></li>                
             </ul>
         </section>
-
         <section class="card">
             <h3>Information</h3>
             <p>Weather: [weather] </p>
             <p>Visits: [visits] </p>
         </section>
-
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491365.80618126!2d-86.9810546!3d15.8147408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f69007758cbbcd9%3A0xc8141bec642348c0!2sLa%20Ceiba%2C%20Atl%C3%A1ntida!5e0!3m2!1sen!2shn!4v1709695634092!5m2!1sen!2shn" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-
     <footer>
         <p id= "footer-copyright-year">&copy; <span id="current-year"></span></p>
         <p> Margareth Daniela Ramos Discua</p>
@@ -82,13 +62,7 @@
         <p id="last-modified"> Last modification: <span id="last-modified-date"></span></p>
         <p></p>
     </footer>
-
-
-
-  
-
     <script src="scripts/menu.js"></script>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // aqui esto Obtiene el elemento del span de la fecha de la última modificación
@@ -98,6 +72,5 @@
             lastModifiedSpan.textContent = document.lastModified;
         });
     </script>
-
 </body>
 </html>
