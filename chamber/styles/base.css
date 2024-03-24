@@ -29,11 +29,7 @@ header img{
     color: #fff;
     padding: 0;
     margin: 0;
-    margin-left: 0px;
-
-    
-   
-}
+    margin-left: 0px;}
 
 .nav a{
     display: inline-block;
@@ -43,8 +39,7 @@ header img{
     border-radius: 5px;
     margin: 0 10px;
     text-decoration: none;
-    margin-left: 100px;
-}
+    margin-left: 100px;}
 
 nav li{
     margin: 0 10px;
@@ -62,14 +57,12 @@ nav li{
     top: 100px;
     left: 0;
     width: 100%;
-
 }
 
 .nav.show li{
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #fff;
-
 }
 
 .nav.show li:last-child {
@@ -80,24 +73,14 @@ nav li{
     color: #fff;
     text-decoration: none;
 }
-
 @media screen and (min-width: 769px) {
-    
     .menu-icon{
         display:none;
     }
-
     .nav{
         display: absolute;  /*antes no se mostraba habia que agregar el flex */
-    }
-
-}
-
+    }}
 @media screen and (max-width:768px){
-
-
-
-    
     .nav{
         display: none;
         position: flex;
@@ -108,50 +91,30 @@ nav li{
         overflow-y: auto;
         max-height: calc(100vh - 100px);
         overflow-x: hidden;
-        margin-top: -20px;
-        
-    }
-
+        margin-top: -20px;}
     .nav a {
-        margin-left: 40px;
-    }
+        margin-left: 40px;}
     .menu-icon{
-        display: inline-block;
-    }
-
-
+        display: inline-block;}
     .nav.show{
         display:flex;
         flex-direction: column;
         align-items: center;
-        display: block;
-       
-
-    }
-
+        display: block;}
     .nav.show li{
         padding: 10px 0;
         text-align:center;
-        border-bottom: 1px solid #ffff;
-    }
-
+        border-bottom: 1px solid #ffff;}
     .nav.show li:last-child{
-        border-bottom:none
-    }
-
+        border-bottom:none}
     .nav.show a {
         color: #fff;
         text-decoration: none;
         font-size: 1.2rem;
-        padding: 15px 20px;
-    }
-
+        padding: 15px 20px;}
     .close-menu{
         display: inline-block;
-        cursor:pointer;
-    }
-     
-}
+        cursor:pointer;}}
 
 #menu{
     font-size: 1.5rem;
@@ -162,25 +125,13 @@ nav li{
     top: 2rem;
     right: 2rem;
     display: column;
-    z-index: 1000;
-    
-}
+    z-index: 1000;}
 
 #menu::before{
-    content: "☰";
-}
+    content: "☰";}
 
 #menu.open::before{
-    content: "✖";
-}
-
-
-
-
-
-
-
-
+    content: "✖";}
 
 .nav a:hover{
     background-color: #042444;
@@ -188,51 +139,27 @@ nav li{
 
 }
 
-
-
 .nav ul{
     list-style-type: none;
     display: absolute;
 }
 
-
 .nav li{
     margin: 1px;
     display: list-item;
     justify-items: center;
-    color: rgb(255, 233, 233);
-
-
-}
-
-
-
-
-
-
-
-
+    color: rgb(255, 233, 233);}
 
 .social-links{
     display: flex;
     width: auto;
-    justify-content:flex-end ;
-   
-
-}
+    justify-content:flex-end ;}
 .social-links a{
     margin-right: 20px;
-    margin-top: -50px;
-}
-
+    margin-top: -50px;}
 .social-links a i{
     font-size: 30px;
-    color: aliceblue;
-}
-
-
-/*main*/
-/*hero section */
+    color: aliceblue;}
 
 main{
     display: flex;
@@ -241,9 +168,6 @@ main{
     justify-content: center;
     text-align: center;
 }
-
-
-
 
 .hero-container{
     position: relative;
@@ -254,9 +178,7 @@ main{
     background-position: center;
     transition:all .1s ease-in-out;
     background-image: url("../images/crece.jpg");
-    animation: hero-container 28s infinite linear;
-
-}
+    animation: hero-container 28s infinite linear;}
 
 .hero-content{
     margin: 0;
@@ -269,18 +191,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
+    text-align: center;}
 .hero-content h1{
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
     font-size: 40px;
-    text-align: center;
-
-
-
-}
+    text-align: center;}
 
 .hero-content a {
     margin-top: 40px;
@@ -290,51 +207,21 @@ main{
     border: 1px solid#ffff;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
-    border-radius: 5px;
-
-
-}
+    border-radius: 5px;}
 
 .hero-content a:hover{
     color: #333;
-    background-color: #ffff;
-}
+    background-color: #ffff;}
 
 @keyframes hero-container{
-
-    0%{
-        background-image: url("../images/crece.jpg");
-    }
-    25%{
-        background-image: url("../images/crece.jpg");
-    }
-
-    
-    26%{
-        background-image: url("../images/entrega.jpg");
-    }
-    50%{
-        background-image: url("../images/entrega.jpg");
-    }
-
-
-    
-    51%{
-        background-image: url("../images/compania.jpg");
-    }
-    75%{
-        background-image: url("../images/compania.jpg");
-    }
-
-    
-    76%{
-        background-image: url("../images/ogimage.jpg");
-    }
-    100%{
-        background-image: url("../images/ogimage.jpg");
-    }
-
-}
+    0%{background-image: url("../images/crece.jpg");}
+    25%{background-image: url("../images/crece.jpg");}
+    26%{background-image: url("../images/entrega.jpg");}
+    50%{background-image: url("../images/entrega.jpg");}
+    51%{background-image: url("../images/compania.jpg");}
+    75%{background-image: url("../images/compania.jpg");}
+    76%{ background-image: url("../images/ogimage.jpg");}
+    100%{background-image: url("../images/ogimage.jpg");}}
 
 .event-card{
     background-color: #f9f9f9;
@@ -344,10 +231,7 @@ main{
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
-    margin-bottom: 100px;
-
-
-}
+    margin-bottom: 100px;}
 
 .weather-card{
     background-color:#f9f9f9 ;
@@ -357,13 +241,7 @@ main{
     text-align: center;
     max-width: 400px;
     margin:  0 auto;
-    margin-bottom: 100px;
-
-
-}
-
-
-
+    margin-bottom: 100px;}
 
 .spotlight-card{
     background-color: #f9f9f9;
@@ -372,15 +250,7 @@ main{
     padding: 20px;
     max-width: 400px;
     margin: 0;
-    margin-bottom: 100px;
-
-}
-
-
-
-
-
-
+    margin-bottom: 100px;}
 
 
 /*sections*/
@@ -391,14 +261,7 @@ main{
 .fa-solid{
     margin-bottom: 30px;
     font-size: 80px;
-
 }
-
-
-
-
-
-
 
 
 /* footer */
@@ -412,24 +275,19 @@ footer{
 .map
 {
     width: 50px;
-    height: 50px;
-    
-}
+    height: 50px;}
 
 .contact-info{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-}
+    align-items: center;}
 
 
 .copyright{
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-bottom: 50px;
-}
+    padding-bottom: 50px;}
 
 
 
