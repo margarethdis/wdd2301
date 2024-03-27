@@ -159,9 +159,9 @@ main{
     background-color: #ffff;}
 @keyframes hero-container{
     0%{background-image: url("../images/crece.jpg");}
-    25%{background-image: url("../images/crece.jpg");}
-    26%{background-image: url("../images/entrega.jpg");}
-    50%{background-image: url("../images/entrega.jpg");}}
+    50%{background-image: url("../images/crece.jpg");}
+    56%{background-image: url("../images/entrega.jpg");}
+    100%{background-image: url("../images/entrega.jpg");}}
 .event-card{
     background-color: #f9f9f9;
     border: 1px solid #ccc;
