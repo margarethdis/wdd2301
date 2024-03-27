@@ -89,8 +89,8 @@ nav li{
     }
 
     .social-links{
-        margin-top: 100px;
-        margin-left:640px;
+        margin-top: 80px;
+        margin-left:200px;
     }
     .dark-mode-switch{
         margin-top: 0px;
@@ -98,7 +98,6 @@ nav li{
         position: absolute;
     }
     .nav{display: none;
-         position: flex;
          top:100px;
          left:0;
          width:100%;
@@ -268,20 +267,63 @@ main{
     max-width: 400px;
     margin:  0 auto;
     margin-bottom: 100px;}
+
+
+.spotlight{
+
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.spotlight i{
+    margin-bottom: 0px;
+}
+
+.spotlight-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.spotlights{
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    text-align: center;
+    column-gap: 10px;
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .spotlight-card{
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
-    max-width: 400px;
+    padding: 15px;
+    max-width: 250px;
     margin: 0 auto;
-    max-width: 400px;
-    width: 100%;
+    max-width: 1200px;
+    width: calc(33.33% - 20px);
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: space-around;
-    margin-bottom: 100px;}
-.sections{margin-top: 100px;}
+    margin-bottom: 20px;
+}
+
+.spotlight-card .spotlight{
+    margin-top: 10px;
+}
+
+.sections{margin-top: 50px;}
+
+
 
 .fa-solid{ margin-bottom: 30px;
            font-size: 80px;}
